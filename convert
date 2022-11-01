@@ -1,0 +1,30 @@
+// This constant represents our currency
+// conversion rate
+var DOLLARS_TO_POUNDS = 0.870;
+var DOLLARS_TO_EUROS = 1.0127;
+var DOLLARS_TO_CAD = 1.363;
+var DOLLARS_TO_AUD = 1.564;
+
+// This program will convert dollars to different currencies
+function start(){
+	println("This program converts USD to other currencies.");
+	var dollars = readFloat("How many dollars to you want to change to ? ");
+	
+	// This is how we can convert from dollars
+	// to pounds
+	var pounds = dollars * DOLLARS_TO_POUNDS;
+	
+	println("$" + dollars + " = " + pounds + " British pounds");
+	
+	//This is how we can convert from dollars to euros
+	var euros = dollars * DOLLARS_TO_EUROS;
+	
+	println("$" + dollars + " = " + euros + " euros");
+	
+	//This is how we can convert from dollars to CAD
+	var cad = dollars * DOLLARS_TO_CAD;
+	println("$" + dollars + " = " + cad + " CAD")
+	
+	//This is how we can covert from dollars to AUD
+	var aud = dollars * DOLLARS_TO_AUD;
+	println("$" + dollars + " = " + aud + " AUD")
